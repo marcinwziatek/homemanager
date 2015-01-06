@@ -21,7 +21,7 @@ namespace HomeManager
             var start = DateTime.Now;
 
             lblStatus.Text = "Pending";
-            _testService.Loop32();
+            _testService.Loop32Mt(2);
             lblStatus.Text = "Completed";
 
             var stop = DateTime.Now;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Core.Services.Calculation
 {
@@ -20,12 +21,26 @@ namespace Core.Services.Calculation
             }
         }
 
-        public void Loop32()
+        public void Loop32(object state)
         {
-            for (UInt32 i = 0; i < UInt32.MaxValue; i++)
+            var namedState = state as Tuple<long, long>;
+            for (var i = namedState.Item1; i < namedState.Item2; i++)
             {
                 var result = i / 4 + i / 8;
             }
+        }
+
+        public void Loop32Mt(int threadCount)
+        {
+            ManualResetEvent eventX = new ManualResetEvent(false);
+
+            for (var i = 0; i < threadCount; i++)
+            {
+                var state = new Tuple<long, long>(UInt32.MaxValue/threadCount*i-1,UInt32.MaxValue/threadCount);
+                ThreadPool.QueueUserWorkItem(Loop32, state);
+            }
+
+            eventX.WaitOne();
         }
     }
 }
