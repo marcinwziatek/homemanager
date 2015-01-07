@@ -21,11 +21,16 @@ namespace HomeManager
             var start = DateTime.Now;
 
             lblStatus.Text = "Pending";
-            _testService.Loop32Mt(2);
+            var completionTimes = _testService.Loop32Mt(2);
             lblStatus.Text = "Completed";
 
             var stop = DateTime.Now;
-            lblTimeSpan.Text = string.Format("Competion time: {0}", stop.Subtract(start).TotalMilliseconds);
+
+            foreach (var completionTime in completionTimes)
+            {
+                tbResult.Text += string.Format("Competion time: {0} ms", completionTime.TotalMilliseconds);
+                tbResult.Text += Environment.NewLine;
+            } 
         }
     }
 }

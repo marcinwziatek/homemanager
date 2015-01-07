@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Threading;
+using ThreadState = Core.Models.Multithreading.ThreadState;
 
 namespace Core.Services.Calculation
 {
     public class TestService
     {
+        private TimeSpan[] _completionTimes;
+
         public void Loop64()
         {
             for (UInt64 i = 0; i < UInt64.MaxValue; i++)
@@ -23,24 +26,42 @@ namespace Core.Services.Calculation
 
         public void Loop32(object state)
         {
-            var namedState = state as Tuple<long, long>;
-            for (var i = namedState.Item1; i < namedState.Item2; i++)
+            var start = DateTime.Now;
+            var namedState = state as ThreadState;
+            for (var i = namedState.Start; i < namedState.Stop; i++)
             {
                 var result = i / 4 + i / 8;
             }
+
+            _completionTimes[namedState.ThreadNumber] = DateTime.Now.Subtract(start);
+            namedState.Countdown.Signal();
         }
 
-        public void Loop32Mt(int threadCount)
+        public TimeSpan[] Loop32Mt(int threadCount)
         {
-            ManualResetEvent eventX = new ManualResetEvent(false);
+            _completionTimes = new TimeSpan[threadCount];
 
-            for (var i = 0; i < threadCount; i++)
+            using (var finished = new CountdownEvent(1))
             {
-                var state = new Tuple<long, long>(UInt32.MaxValue/threadCount*i-1,UInt32.MaxValue/threadCount);
-                ThreadPool.QueueUserWorkItem(Loop32, state);
+                for (var i = 0; i < threadCount; i++)
+                {
+                    finished.AddCount();
+                    _completionTimes[i] = new TimeSpan();
+                    var state = new ThreadState
+                    {
+                        Start = UInt32.MaxValue/threadCount*i,
+                        Stop = UInt32.MaxValue/(threadCount - i),
+                        Countdown = finished,
+                        ThreadNumber = i
+                    };
+                    ThreadPool.QueueUserWorkItem(Loop32, state);
+                }
+
+                finished.Signal();
+                finished.Wait();
             }
 
-            eventX.WaitOne();
+            return _completionTimes;
         }
     }
 }
