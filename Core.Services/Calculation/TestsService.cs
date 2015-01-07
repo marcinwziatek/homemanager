@@ -50,7 +50,7 @@ namespace Core.Services.Calculation
                     var state = new ThreadState
                     {
                         Start = UInt32.MaxValue/threadCount*i,
-                        Stop = UInt32.MaxValue/(threadCount - i),
+                        Stop = UInt32.MaxValue/(threadCount)*(i+1),
                         Countdown = finished,
                         ThreadNumber = i
                     };

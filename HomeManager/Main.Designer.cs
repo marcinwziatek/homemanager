@@ -36,6 +36,7 @@
             this.rbOneThread = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tbResult = new System.Windows.Forms.TextBox();
+            this.rbThreeThreads = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -73,6 +74,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.rbThreeThreads);
             this.groupBox2.Controls.Add(this.rbTwoThreads);
             this.groupBox2.Controls.Add(this.rbOneThread);
             this.groupBox2.Location = new System.Drawing.Point(218, 12);
@@ -122,6 +124,17 @@
             this.tbResult.Size = new System.Drawing.Size(187, 79);
             this.tbResult.TabIndex = 0;
             // 
+            // rbThreeThreads
+            // 
+            this.rbThreeThreads.AutoSize = true;
+            this.rbThreeThreads.Location = new System.Drawing.Point(7, 63);
+            this.rbThreeThreads.Name = "rbThreeThreads";
+            this.rbThreeThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbThreeThreads.TabIndex = 2;
+            this.rbThreeThreads.TabStop = true;
+            this.rbThreeThreads.Text = "3";
+            this.rbThreeThreads.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +165,7 @@
         private System.Windows.Forms.RadioButton rbOneThread;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox tbResult;
+        private System.Windows.Forms.RadioButton rbThreeThreads;
     }
 }
 
