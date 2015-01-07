@@ -37,6 +37,11 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tbResult = new System.Windows.Forms.TextBox();
             this.rbThreeThreads = new System.Windows.Forms.RadioButton();
+            this.rbFourThreads = new System.Windows.Forms.RadioButton();
+            this.rbFiveThreads = new System.Windows.Forms.RadioButton();
+            this.rbSixThreads = new System.Windows.Forms.RadioButton();
+            this.rbSevenThreads = new System.Windows.Forms.RadioButton();
+            this.rbEightThreads = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -74,6 +79,11 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.rbEightThreads);
+            this.groupBox2.Controls.Add(this.rbSevenThreads);
+            this.groupBox2.Controls.Add(this.rbSixThreads);
+            this.groupBox2.Controls.Add(this.rbFiveThreads);
+            this.groupBox2.Controls.Add(this.rbFourThreads);
             this.groupBox2.Controls.Add(this.rbThreeThreads);
             this.groupBox2.Controls.Add(this.rbTwoThreads);
             this.groupBox2.Controls.Add(this.rbOneThread);
@@ -135,6 +145,61 @@
             this.rbThreeThreads.Text = "3";
             this.rbThreeThreads.UseVisualStyleBackColor = true;
             // 
+            // rbFourThreads
+            // 
+            this.rbFourThreads.AutoSize = true;
+            this.rbFourThreads.Location = new System.Drawing.Point(44, 19);
+            this.rbFourThreads.Name = "rbFourThreads";
+            this.rbFourThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbFourThreads.TabIndex = 3;
+            this.rbFourThreads.TabStop = true;
+            this.rbFourThreads.Text = "4";
+            this.rbFourThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbFiveThreads
+            // 
+            this.rbFiveThreads.AutoSize = true;
+            this.rbFiveThreads.Location = new System.Drawing.Point(44, 40);
+            this.rbFiveThreads.Name = "rbFiveThreads";
+            this.rbFiveThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbFiveThreads.TabIndex = 4;
+            this.rbFiveThreads.TabStop = true;
+            this.rbFiveThreads.Text = "5";
+            this.rbFiveThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbSixThreads
+            // 
+            this.rbSixThreads.AutoSize = true;
+            this.rbSixThreads.Location = new System.Drawing.Point(44, 63);
+            this.rbSixThreads.Name = "rbSixThreads";
+            this.rbSixThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbSixThreads.TabIndex = 5;
+            this.rbSixThreads.TabStop = true;
+            this.rbSixThreads.Text = "6";
+            this.rbSixThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbSevenThreads
+            // 
+            this.rbSevenThreads.AutoSize = true;
+            this.rbSevenThreads.Location = new System.Drawing.Point(81, 20);
+            this.rbSevenThreads.Name = "rbSevenThreads";
+            this.rbSevenThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbSevenThreads.TabIndex = 6;
+            this.rbSevenThreads.TabStop = true;
+            this.rbSevenThreads.Text = "7";
+            this.rbSevenThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbEightThreads
+            // 
+            this.rbEightThreads.AutoSize = true;
+            this.rbEightThreads.Location = new System.Drawing.Point(81, 40);
+            this.rbEightThreads.Name = "rbEightThreads";
+            this.rbEightThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbEightThreads.TabIndex = 7;
+            this.rbEightThreads.TabStop = true;
+            this.rbEightThreads.Text = "8";
+            this.rbEightThreads.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +231,11 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.RadioButton rbThreeThreads;
+        private System.Windows.Forms.RadioButton rbFourThreads;
+        private System.Windows.Forms.RadioButton rbEightThreads;
+        private System.Windows.Forms.RadioButton rbSevenThreads;
+        private System.Windows.Forms.RadioButton rbSixThreads;
+        private System.Windows.Forms.RadioButton rbFiveThreads;
     }
 }
 

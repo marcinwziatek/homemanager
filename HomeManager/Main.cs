@@ -41,6 +41,16 @@ namespace HomeManager
                 return 2;
             if (rbThreeThreads.Checked)
                 return 3;
+            if (rbFourThreads.Checked)
+                return 4;
+            if (rbFiveThreads.Checked)
+                return 5;
+            if (rbSixThreads.Checked)
+                return 6;
+            if (rbSevenThreads.Checked)
+                return 7;
+            if (rbEightThreads.Checked)
+                return 8;
 
             return 1;
         }
