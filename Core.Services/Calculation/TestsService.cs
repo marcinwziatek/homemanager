@@ -47,6 +47,7 @@ namespace Core.Services.Calculation
                 {
                     finished.AddCount();
                     _completionTimes[i] = new TimeSpan();
+              
                     var state = new ThreadState
                     {
                         Start = UInt32.MaxValue/threadCount*i,

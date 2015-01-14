@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Services", "Core.Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Models", "Core.Models\Core.Models.csproj", "{DD4AD071-1FEC-49A0-B769-F6B858F35041}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Data", "Core.Data\Core.Data.csproj", "{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,16 @@ Global
 		{DD4AD071-1FEC-49A0-B769-F6B858F35041}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DD4AD071-1FEC-49A0-B769-F6B858F35041}.Release|x64.ActiveCfg = Release|x64
 		{DD4AD071-1FEC-49A0-B769-F6B858F35041}.Release|x64.Build.0 = Release|x64
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +81,6 @@ Global
 		{8F2CDE2D-EA34-49DD-BFF1-0C8F63873C00} = {88A0F6BA-777E-42CC-8630-E3AB55B31F08}
 		{DB38E5F8-B1A2-4B34-A041-210ED88C3AB8} = {2D3A0787-347F-4882-BAAF-2427DFBD5C07}
 		{DD4AD071-1FEC-49A0-B769-F6B858F35041} = {2D3A0787-347F-4882-BAAF-2427DFBD5C07}
+		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9} = {2D3A0787-347F-4882-BAAF-2427DFBD5C07}
 	EndGlobalSection
 EndGlobal
