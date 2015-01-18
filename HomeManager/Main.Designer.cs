@@ -32,19 +32,22 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbEightThreads = new System.Windows.Forms.RadioButton();
+            this.rbSevenThreads = new System.Windows.Forms.RadioButton();
+            this.rbSixThreads = new System.Windows.Forms.RadioButton();
+            this.rbFiveThreads = new System.Windows.Forms.RadioButton();
+            this.rbFourThreads = new System.Windows.Forms.RadioButton();
+            this.rbThreeThreads = new System.Windows.Forms.RadioButton();
             this.rbTwoThreads = new System.Windows.Forms.RadioButton();
             this.rbOneThread = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tbResult = new System.Windows.Forms.TextBox();
-            this.rbThreeThreads = new System.Windows.Forms.RadioButton();
-            this.rbFourThreads = new System.Windows.Forms.RadioButton();
-            this.rbFiveThreads = new System.Windows.Forms.RadioButton();
-            this.rbSixThreads = new System.Windows.Forms.RadioButton();
-            this.rbSevenThreads = new System.Windows.Forms.RadioButton();
-            this.rbEightThreads = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnDbTest = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -94,6 +97,72 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Threads";
             // 
+            // rbEightThreads
+            // 
+            this.rbEightThreads.AutoSize = true;
+            this.rbEightThreads.Location = new System.Drawing.Point(81, 40);
+            this.rbEightThreads.Name = "rbEightThreads";
+            this.rbEightThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbEightThreads.TabIndex = 7;
+            this.rbEightThreads.TabStop = true;
+            this.rbEightThreads.Text = "8";
+            this.rbEightThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbSevenThreads
+            // 
+            this.rbSevenThreads.AutoSize = true;
+            this.rbSevenThreads.Location = new System.Drawing.Point(81, 20);
+            this.rbSevenThreads.Name = "rbSevenThreads";
+            this.rbSevenThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbSevenThreads.TabIndex = 6;
+            this.rbSevenThreads.TabStop = true;
+            this.rbSevenThreads.Text = "7";
+            this.rbSevenThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbSixThreads
+            // 
+            this.rbSixThreads.AutoSize = true;
+            this.rbSixThreads.Location = new System.Drawing.Point(44, 63);
+            this.rbSixThreads.Name = "rbSixThreads";
+            this.rbSixThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbSixThreads.TabIndex = 5;
+            this.rbSixThreads.TabStop = true;
+            this.rbSixThreads.Text = "6";
+            this.rbSixThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbFiveThreads
+            // 
+            this.rbFiveThreads.AutoSize = true;
+            this.rbFiveThreads.Location = new System.Drawing.Point(44, 40);
+            this.rbFiveThreads.Name = "rbFiveThreads";
+            this.rbFiveThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbFiveThreads.TabIndex = 4;
+            this.rbFiveThreads.TabStop = true;
+            this.rbFiveThreads.Text = "5";
+            this.rbFiveThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbFourThreads
+            // 
+            this.rbFourThreads.AutoSize = true;
+            this.rbFourThreads.Location = new System.Drawing.Point(44, 19);
+            this.rbFourThreads.Name = "rbFourThreads";
+            this.rbFourThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbFourThreads.TabIndex = 3;
+            this.rbFourThreads.TabStop = true;
+            this.rbFourThreads.Text = "4";
+            this.rbFourThreads.UseVisualStyleBackColor = true;
+            // 
+            // rbThreeThreads
+            // 
+            this.rbThreeThreads.AutoSize = true;
+            this.rbThreeThreads.Location = new System.Drawing.Point(7, 63);
+            this.rbThreeThreads.Name = "rbThreeThreads";
+            this.rbThreeThreads.Size = new System.Drawing.Size(31, 17);
+            this.rbThreeThreads.TabIndex = 2;
+            this.rbThreeThreads.TabStop = true;
+            this.rbThreeThreads.Text = "3";
+            this.rbThreeThreads.UseVisualStyleBackColor = true;
+            // 
             // rbTwoThreads
             // 
             this.rbTwoThreads.AutoSize = true;
@@ -134,77 +203,32 @@
             this.tbResult.Size = new System.Drawing.Size(187, 79);
             this.tbResult.TabIndex = 0;
             // 
-            // rbThreeThreads
+            // groupBox4
             // 
-            this.rbThreeThreads.AutoSize = true;
-            this.rbThreeThreads.Location = new System.Drawing.Point(7, 63);
-            this.rbThreeThreads.Name = "rbThreeThreads";
-            this.rbThreeThreads.Size = new System.Drawing.Size(31, 17);
-            this.rbThreeThreads.TabIndex = 2;
-            this.rbThreeThreads.TabStop = true;
-            this.rbThreeThreads.Text = "3";
-            this.rbThreeThreads.UseVisualStyleBackColor = true;
+            this.groupBox4.Controls.Add(this.btnDbTest);
+            this.groupBox4.Location = new System.Drawing.Point(424, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(148, 101);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Db test";
             // 
-            // rbFourThreads
+            // btnDbTest
             // 
-            this.rbFourThreads.AutoSize = true;
-            this.rbFourThreads.Location = new System.Drawing.Point(44, 19);
-            this.rbFourThreads.Name = "rbFourThreads";
-            this.rbFourThreads.Size = new System.Drawing.Size(31, 17);
-            this.rbFourThreads.TabIndex = 3;
-            this.rbFourThreads.TabStop = true;
-            this.rbFourThreads.Text = "4";
-            this.rbFourThreads.UseVisualStyleBackColor = true;
-            // 
-            // rbFiveThreads
-            // 
-            this.rbFiveThreads.AutoSize = true;
-            this.rbFiveThreads.Location = new System.Drawing.Point(44, 40);
-            this.rbFiveThreads.Name = "rbFiveThreads";
-            this.rbFiveThreads.Size = new System.Drawing.Size(31, 17);
-            this.rbFiveThreads.TabIndex = 4;
-            this.rbFiveThreads.TabStop = true;
-            this.rbFiveThreads.Text = "5";
-            this.rbFiveThreads.UseVisualStyleBackColor = true;
-            // 
-            // rbSixThreads
-            // 
-            this.rbSixThreads.AutoSize = true;
-            this.rbSixThreads.Location = new System.Drawing.Point(44, 63);
-            this.rbSixThreads.Name = "rbSixThreads";
-            this.rbSixThreads.Size = new System.Drawing.Size(31, 17);
-            this.rbSixThreads.TabIndex = 5;
-            this.rbSixThreads.TabStop = true;
-            this.rbSixThreads.Text = "6";
-            this.rbSixThreads.UseVisualStyleBackColor = true;
-            // 
-            // rbSevenThreads
-            // 
-            this.rbSevenThreads.AutoSize = true;
-            this.rbSevenThreads.Location = new System.Drawing.Point(81, 20);
-            this.rbSevenThreads.Name = "rbSevenThreads";
-            this.rbSevenThreads.Size = new System.Drawing.Size(31, 17);
-            this.rbSevenThreads.TabIndex = 6;
-            this.rbSevenThreads.TabStop = true;
-            this.rbSevenThreads.Text = "7";
-            this.rbSevenThreads.UseVisualStyleBackColor = true;
-            // 
-            // rbEightThreads
-            // 
-            this.rbEightThreads.AutoSize = true;
-            this.rbEightThreads.Location = new System.Drawing.Point(81, 40);
-            this.rbEightThreads.Name = "rbEightThreads";
-            this.rbEightThreads.Size = new System.Drawing.Size(31, 17);
-            this.rbEightThreads.TabIndex = 7;
-            this.rbEightThreads.TabStop = true;
-            this.rbEightThreads.Text = "8";
-            this.rbEightThreads.UseVisualStyleBackColor = true;
+            this.btnDbTest.Location = new System.Drawing.Point(7, 19);
+            this.btnDbTest.Name = "btnDbTest";
+            this.btnDbTest.Size = new System.Drawing.Size(75, 23);
+            this.btnDbTest.TabIndex = 0;
+            this.btnDbTest.Text = "Run";
+            this.btnDbTest.UseVisualStyleBackColor = true;
+            this.btnDbTest.Click += new System.EventHandler(this.btnDbTest_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 262);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -216,6 +240,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -236,6 +261,8 @@
         private System.Windows.Forms.RadioButton rbSevenThreads;
         private System.Windows.Forms.RadioButton rbSixThreads;
         private System.Windows.Forms.RadioButton rbFiveThreads;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnDbTest;
     }
 }
 

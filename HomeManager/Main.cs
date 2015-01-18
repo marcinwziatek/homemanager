@@ -2,18 +2,21 @@
 using System.Windows.Forms;
 
 using Core.Services.Calculation;
+using Infrastructure.Data.Repositories;
 
 namespace HomeManager
 {
     public partial class Main : Form
     {
         private readonly TestService _testService;
+        private readonly SaveResultsRepository _saveResultsRepository;
 
         public Main()
         {
             InitializeComponent();
 
             _testService = new TestService();
+            _saveResultsRepository = new SaveResultsRepository();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -53,6 +56,12 @@ namespace HomeManager
                 return 8;
 
             return 1;
+        }
+
+        private void btnDbTest_Click(object sender, EventArgs e)
+        {
+            _saveResultsRepository.CreateTest();
+            MessageBox.Show("Done");
         }
     }
 }
