@@ -17,7 +17,7 @@ namespace Infrastructure.Data.Repositories
                     ProcessingTime = 10,
                     StarTime = DateTime.Now
                 };
-
+                // 4Lt2RZ8tVptYH3WQ
                 ctx.Results.Add(testResult);
                 ctx.SaveChanges();
             }
