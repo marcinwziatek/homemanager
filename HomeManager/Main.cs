@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-
+using Core.Contracts.Services;
 using Core.Services.Calculation;
 using Infrastructure.Data.Repositories;
 
@@ -8,7 +8,7 @@ namespace HomeManager
 {
     public partial class Main : Form
     {
-        private readonly TestService _testService;
+        private readonly ITestService _testService;
         private readonly SaveResultsRepository _saveResultsRepository;
 
         public Main()

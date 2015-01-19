@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Threading;
+using Core.Contracts.Services;
 using ThreadState = Core.Models.Multithreading.ThreadState;
 
 namespace Core.Services.Calculation
 {
-    public class TestService
+    public class TestService : ITestService
     {
         private TimeSpan[] _completionTimes;
 

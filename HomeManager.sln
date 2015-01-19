@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Data", "Core.Data\Core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data", "Infrastructure.Data\Infrastructure.Data.csproj", "{4B8A84FA-DFE4-46D5-B135-C729427862A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Contracts", "Core.Contracts\Core.Contracts.csproj", "{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,17 @@ Global
 		{4B8A84FA-DFE4-46D5-B135-C729427862A9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{4B8A84FA-DFE4-46D5-B135-C729427862A9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{4B8A84FA-DFE4-46D5-B135-C729427862A9}.Release|x64.ActiveCfg = Release|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Debug|x64.ActiveCfg = Debug|x64
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Debug|x64.Build.0 = Debug|x64
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +110,6 @@ Global
 		{DD4AD071-1FEC-49A0-B769-F6B858F35041} = {2D3A0787-347F-4882-BAAF-2427DFBD5C07}
 		{1A6EF416-71C9-4B07-9BCF-2229CE2A62E9} = {2D3A0787-347F-4882-BAAF-2427DFBD5C07}
 		{4B8A84FA-DFE4-46D5-B135-C729427862A9} = {798B1E99-46FF-4C2A-8E2F-954DFDF4AC74}
+		{77E883E7-48F1-48B9-9DF5-DE3CAEB3854E} = {2D3A0787-347F-4882-BAAF-2427DFBD5C07}
 	EndGlobalSection
 EndGlobal

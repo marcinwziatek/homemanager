@@ -98,6 +98,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Core.Contracts\Core.Contracts.csproj">
+      <Project>{77e883e7-48f1-48b9-9df5-de3caeb3854e}</Project>
+      <Name>Core.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core.Models\Core.Models.csproj">
       <Project>{dd4ad071-1fec-49a0-b769-f6b858f35041}</Project>
       <Name>Core.Models</Name>
